@@ -1,0 +1,35 @@
+<!--Create a html page that embeds:
+- an audio file with controls
+- a video file with controls and posters
+- a youtube video using iframe-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Embedding Example</title>
+</head>
+
+<body>
+
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="Assets\wt-alu-audio.mp3" type="audio/mp3">
+        Browser doesn't support this audio tag.
+    </audio>
+
+    <hr>
+
+    <h2>Video Example</h2>
+    <video height="400" controls poster="Assets\pfp.png">
+        <source src="Assets\wt-vid.mp4" type="video/mp4">
+        Browser doesn't support this video tag.
+    </video>
+
+    <hr>
+
+    <h2>YouTube Video (iframe)</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/33tITqSwGB8?si=AeeqV-zEevDaDF9n" allowfullscreen></iframe>
+
+</body>
+</html>
