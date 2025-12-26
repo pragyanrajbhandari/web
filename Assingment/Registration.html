@@ -1,0 +1,92 @@
+<!--Task 2: Create a Registration Page
+Design a user registration form with the following requirements:
+•A main heading (e.g., "Create New Account" or "Register").
+•Input fields:
+    •Full Name (text input).
+    •Email (email input type).
+    •Phone Number (use tel input type).
+    •Gender (use radio buttons with options like Male, Female, Other).
+    •Country (use a <select> dropdown with country options, India, UK, Canada, Nepal,Australia in same sequence and Nepal should be selected by default).
+    •Favorite Games/Sports (use checkboxes with options such as Football, Cricket, Basketball, Tennis, and at least one more of your choice).
+    •Profile Image Upload (file input, restrict to image files if possible).
+    •Certificates Upload (file input, allow multiple files or PDF/images; you can add one or more upload fields as needed).
+•Add any other missing elements that a typical registration form should have, such as:
+    •Password and Confirm Password fields (with password type).
+    •A terms and conditions checkbox (required).
+    •A submit button labeled "Register".
+•Use a <fieldset> and <legend> where appropriate to group related sections (e.g., Personal Info, Preferences, Uploads).-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="username" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="PRB@mail.com" required><br>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+            <label for="coutry">Country</label>
+            <select name="country" id="country">
+                <option value="Nepal">Nepal</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="India" >India</option>
+                <option value="Australia">Australia</option>
+            </select><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Preferences</legend>
+            <label for="games">Favourite Games</label>
+            <input type="checkbox" name="games" id="football">
+            <label for="football">Football</label>
+            <input type="checkbox" name="games" id="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="games" id="basketball">
+            <label for="basketball">Basketball</label>
+            <input type="checkbox" name="games" id="tennis">
+            <label for="tennis">Tennis</label>
+            <input type="checkbox" name="games" id="badminton">
+            <label for="badminton">Badminton</label><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Uploads</legend>
+            <label for="image">Profile Image(png format)</label>
+            <input type="file" id="image" name="image" accept="image/png"><br>   
+            <label for="files">Certificates Upload</label>
+            <input type="file" id="files" name="files" required multiple><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Security</legend>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="confirm-password">Confirm Password</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Register">
+            
+    </form>
+</body>
+</html>

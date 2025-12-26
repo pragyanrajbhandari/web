@@ -1,0 +1,32 @@
+<!--Task 3: Create a Password Reset Form Design a simple password reset request form with the following requirements: 
+        • Use a <fieldset> element with a <legend> that says "Password Reset" or "Forgot Password?". 
+            • Input field: 
+            • Email (email input type). 
+            • A submit button labeled "Reset Password". 
+            • Optionally, add a brief description text above or below the form explaining the process (e.g., "Enter your email and we'll send you a reset link."). 
+        Additional Guidelines: 
+            • All forms should be inside proper <form> tags (you can use action="#" and method="post" for now since we're not connecting to a backend). 
+            • Ensure accessibility: Use <label for="id"> linked to input IDs. 
+            • Validate where possible using HTML5 attributes (e.g., required). 
+            • Create separate HTML files for each page (e.g., login.html, register.html, reset.html) or use sections in one file with headings.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <fieldset>
+        <legend>Forgot Password?</legend><br>
+        <p>Enter your email to password reset link.</p>
+        <label for="reset-email">Email</label><br>
+        <input type="email" id="reset-email" name="email" placeholder="PRB@mail.com" required><br><br>
+        <button type="submit">Reset Password</button>
+        </fieldset>
+    </form>
+</body>
+</html>
